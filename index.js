@@ -16,7 +16,7 @@ import './models/associations.js';
 const { json: bodyParserJson } = pkg;
 const JWT_SECRET = 'your_secret_key_here';
 const app = express();
-const port = 8080;
+const port = 5000;
 
 const allowedOrigins = ['http://localhost:3000', 'http://localhost:5173'];
 

@@ -1,14 +1,8 @@
 import { Sequelize } from 'sequelize';
 
-const sequelize = new Sequelize('hyperial', 'adminhyperial', 'kipasAngin5000', {
-  host: 'hyperialdb-server.mysql.database.azure.com',
+const sequelize = new Sequelize('hyperialdb', 'root', '', {
+  host: 'localhost',
   dialect: 'mysql',
-  dialectOptions: {
-    ssl: {
-      require: true,
-      rejectUnauthorized: false
-    }
-  }
 });
 
 export default sequelize;
